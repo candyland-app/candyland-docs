@@ -1,0 +1,33 @@
+{
+  "name": "candyland-docs",
+  "version": "0.0.0",
+  "author": "Candyland team",
+  "description": "📝 Project-wide documentation & reports",
+  "license": "MIT",
+  "homepage": "https://github.com/klauscfhq/candyland-docs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klauscfhq/candyland-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klauscfhq/candyland-docs/issues"
+  },
+  "dependencies": {
+    "remark-cli": "^4.0.0",
+    "remark-preset-lint-recommended": "^3.0.1",
+    "remark-validate-links": "^7.0.0"
+  },
+  "scripts": {
+    "test": "remark ."
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      "remark-validate-links",
+      [
+        "lint-list-item-indent",
+        "space"
+      ]
+    ]
+  }
+}
