@@ -18,7 +18,7 @@
     "remark-validate-links": "^7.0.0"
   },
   "scripts": {
-    "test": "remark ."
+    "test": "remark .github ."
   },
   "remarkConfig": {
     "plugins": [
