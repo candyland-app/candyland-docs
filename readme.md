@@ -10,9 +10,7 @@
 
 ## Related
 
-- [Frontend](https://github.com/klauscfhq/candyland-frontend)
 - [App](https://github.com/klauscfhq/candyland-app)
-- [Backend](https://github.com/klauscfhq/candyland-backend)
 
 ## Contents
 
@@ -28,7 +26,7 @@ Building and maintaining project-wide documentation and reports for the Candylan
 
 ## Building
 
-- Install the dependencies `npm i`
+- Install the dependencies `npm install`
 - Once done editing check for errors `npm test`
 
 Project-wide docs and reports linting for `markdown` syntax errors is done using [`remark-cli`](https://github.com/wooorm/remark/tree/master/packages/remark-cli).
