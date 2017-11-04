@@ -24,6 +24,8 @@
 
 Building and maintaining project-wide documentation and reports for the Candyland app.
 
+The Candyland webapp is the semester-long team project for the 2017 Software Engineering course at ECE NTUA.
+
 ## Building
 
 - Install the dependencies `npm install`
@@ -33,12 +35,13 @@ Project-wide docs and reports linting for `markdown` syntax errors is done using
 
 ## Team
 
-- Leonidas Avdelas ([@LoniasGR](https://github.com/LoniasGR))
-- George Baxopoulos ([@georgebax](https://github.com/georgebax))
-- Konstantinos Mitropoulos ([@tsikos7](https://github.com/tsikos7))
-- Philippos Orphanoudakis ([@PhilOrfan](https://github.com/PhilOrfan))
-- Klaus Sinani ([@klauscfhq](https://github.com/klauscfhq))
-- Christos Stilianidis ([@Jezulas](https://github.com/Jezulas))
+- Leonidas Avdelas ([@LoniasGR](https://github.com/LoniasGR)) AM: 3113182
+- George Baxopoulos ([@georgebax](https://github.com/georgebax)) AM: 3113021
+- Konstantinos Mitropoulos ([@tsikos7](https://github.com/tsikos7)) AM: 3113169
+- Philippos Orphanoudakis ([@PhilOrfan](https://github.com/PhilOrfan)) AM:
+  3113140
+- Klaus Sinani ([@klauscfhq](https://github.com/klauscfhq)) AM: 3113623
+- Christos Stilianidis ([@Jezulas](https://github.com/Jezulas)) AM: 3113130
 
 ## License
 
