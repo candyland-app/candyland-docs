@@ -18,7 +18,9 @@
     "remark-validate-links": "^7.0.0"
   },
   "scripts": {
-    "test": "remark ."
+    "test": "npm run test:docs && npm run test:deps",
+    "test:docs": "remark .github .",
+    "test:deps": "depcheck --ignores=remark-preset-lint-recommended,remark-validate-links"
   },
   "remarkConfig": {
     "plugins": [
@@ -29,5 +31,8 @@
         "space"
       ]
     ]
+  },
+  "devDependencies": {
+    "depcheck": "^0.6.8"
   }
 }
