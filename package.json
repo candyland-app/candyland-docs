@@ -22,6 +22,7 @@
   },
   "scripts": {
     "dist": "node index.js",
+    "clean": "node ./bin/clean.js",
     "test": "npm run test:docs && npm run test:js && npm run test:deps",
     "test:js": "xo",
     "test:docs": "remark .github .",
