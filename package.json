@@ -13,12 +13,17 @@
     "url": "https://github.com/klauscfhq/candyland-docs/issues"
   },
   "dependencies": {
+    "chalk": "^2.0.1",
+    "markdown-pdf": "^8.0.0",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
-    "remark-validate-links": "^7.0.0"
+    "remark-validate-links": "^7.0.0",
+    "rimraf": "^2.6.2"
   },
   "scripts": {
-    "test": "npm run test:docs && npm run test:deps",
+    "dist": "node index.js",
+    "test": "npm run test:docs && npm run test:js && npm run test:deps",
+    "test:js": "xo",
     "test:docs": "remark .github .",
     "test:deps": "depcheck --ignores=remark-preset-lint-recommended,remark-validate-links"
   },
@@ -33,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "depcheck": "^0.6.8"
+    "depcheck": "^0.6.8",
+    "xo": "^0.19.0"
   }
 }
