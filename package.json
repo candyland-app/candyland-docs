@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "chalk": "^2.0.1",
+    "cross-zip": "^2.1.5",
     "markdown-pdf": "^8.0.0",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
@@ -22,6 +23,7 @@
   },
   "scripts": {
     "dist": "node index.js",
+    "pack": "node ./bin/pack.js",
     "clean": "node ./bin/clean.js",
     "test": "npm run test:docs && npm run test:js && npm run test:deps",
     "test:js": "xo",
