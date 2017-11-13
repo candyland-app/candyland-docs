@@ -1,29 +1,55 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const zip = require('cross-zip');
 const chalk = require('chalk');
+const mkdirp = require('mkdirp');
+const zip = require('cross-zip');
+const rimraf = require('rimraf');
+
 const packageJSON = require('../package.json');
+
+const join = path.join;
+const resolve = path.resolve;
 
 const red = chalk.bold.red;	// Red bold text
 const green = chalk.bold.green;	// Green bold text
 const yellow = chalk.bold.yellow;	// Red bold text
 
-const distPath = 'dist/';	// Dist directory
-const rootPath = path.resolve(__dirname, '../');	// Project root diretory
+const distPath = resolve(__dirname, '../dist');	// Dist directory
+const publishPath = resolve(__dirname, '../publish');	// Zipped artifacts directory
 const buildName = packageJSON.name + '-v' + packageJSON.version;	// Zip filename
 
+function publishSetup() {
+	if (fs.existsSync(publishPath)) {
+		try {
+			// Clean-up the pre-existing directory
+			rimraf.sync(publishPath);
+			console.log(green('✔ Cleaning up'));
+			mkdirp.sync(publishPath);
+		} catch (err) {
+			console.error(err);
+		}
+	}
+	// Create the zipped artifacts directory
+	mkdirp.sync(publishPath);
+}
+
 function packageZip() {
+	// Create the `publish` directory
+	publishSetup();
+	// Initialize packaging process
+	console.log(green('Creating zip...'));
+
+	// Input directory
+	const inPath = distPath;
+	// Output directory
+	const outPath = join(publishPath, buildName + '.zip');
+
 	try {
-		// Create .zip file
-		console.log(green('Creating zip...'));
-
-		const inPath = distPath;	// Input directory
-		const outPath = path.join(rootPath, buildName + '.zip');	// Output direcotory
-
-		zip.zipSync(inPath, outPath);	// Zipping process
-
+		// Zipping process
+		zip.zipSync(inPath, outPath);
 		console.log(green('✔ Zip created'));
+		console.log(yellow('  + ' + outPath));
 	} catch (err) {
 		console.error(err);
 		printWarning();
@@ -32,11 +58,11 @@ function packageZip() {
 
 function printWarning() {
 	// Print a large warning when packaging fails
-	console.log(red(fs.readFileSync(path.join(__dirname, 'warning.txt'), 'utf8')));
+	console.log(red(fs.readFileSync(join(__dirname, 'warning.txt'), 'utf8')));
 }
 
 if (fs.existsSync(distPath)) {
-	// Check if `dist` directory exist
+	// Start packaging if the `dist` directory exist
 	packageZip();
 } else {
 	console.log(yellow('Nothing to zip'));
