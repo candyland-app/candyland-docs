@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="media/logo.png" width="30%"><br/>Cannyland Docs
+<img src="/media/logo.png" width="30%"><br/>Cannyland Docs
 </h1>
 
 <h4 align="center">
@@ -31,6 +31,7 @@ The Candyland webapp is the semester-long team project for the 2017 Software Eng
 - Install the dependencies `npm install`
 - Once done editing check for errors `npm test`
 - Build the reports `npm run dist`
+- Package the artifacts `npm run pack`
 - Clean-up compiled files `npm run clean`
 
 Project-wide docs and reports linting for `markdown` syntax errors is done using [`remark-cli`](https://github.com/wooorm/remark/tree/master/packages/remark-cli).
