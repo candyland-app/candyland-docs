@@ -7,8 +7,8 @@ const markdownPDF = require('markdown-pdf');
 const green = chalk.bold.green;	// Green bold text
 const yellow = chalk.bold.yellow;	// Yellow bold text
 
-const distPath = 'dist/';		// Dist directory
-const mdDocs = ['Report1.md'];	// Markdown source files
+const distPath = 'dist/';	// Dist directory
+const mdDocs = ['reports/requirements-analysis.md'];	// Markdown source files
 
 const pdfOptions = {
 	// PDF conversion options
@@ -19,7 +19,8 @@ const pdfOptions = {
 
 const pdfDocs = mdDocs.map(mdDoc => {
 	// PDF docs to be created
-	return distPath + mdDoc.replace('.md', '.pdf');
+	mdDoc = mdDoc.replace(/reports\/|.md/gi, '');
+	return distPath + mdDoc + '.pdf';
 });
 
 if (fs.existsSync(distPath)) {
@@ -36,7 +37,7 @@ if (fs.existsSync(distPath)) {
 markdownPDF(pdfOptions).from(mdDocs).to(pdfDocs, () => {
 	// Convert markdown files to PDF
 	console.log(green('✔ Created PDF files'));
-	pdfDocs.forEach(mdDoc => {
-		console.log(yellow('  + ' + mdDoc));
+	pdfDocs.forEach(pdfDoc => {
+		console.log(yellow('  + ' + pdfDoc));
 	});
 });
