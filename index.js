@@ -11,11 +11,11 @@ const resolve = path.resolve;
 const green = chalk.bold.green;	// Green bold text
 const yellow = chalk.bold.yellow;	// Yellow bold text
 
-const distPath = 'dist/';	// Dist directory
+const distPath = resolve(__dirname, 'dist');	// Dist directory
 const stylePath = resolve(__dirname, 'style');	// Style directory
 const cssFile = join(stylePath, 'index.css');	// Main styling file
-
-const mdDocs = ['reports/requirements-analysis.md'];	// Markdown source files
+const reportsPath = resolve(__dirname, 'reports');	// Reports directory
+const reportTitles = ['requirements-analysis'];	// Project report titles
 
 const pdfOptions = {
 	// PDF conversion options
@@ -29,10 +29,16 @@ const pdfOptions = {
 	}
 };
 
-const pdfDocs = mdDocs.map(mdDoc => {
+const mdDocs = reportTitles.map(report => {
+	// Markdown source docs
+	const mdDoc = join(reportsPath, report);
+	return mdDoc + '.md';
+});
+
+const pdfDocs = reportTitles.map(report => {
 	// PDF docs to be created
-	mdDoc = mdDoc.replace(/reports\/|.md/gi, '');
-	return distPath + mdDoc + '.pdf';
+	const pdfDoc = join(distPath, report);
+	return pdfDoc + '.pdf';
 });
 
 if (fs.existsSync(distPath)) {
