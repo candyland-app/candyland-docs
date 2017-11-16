@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="/media/logo.png" width="30%"><br/>Cannyland Docs
+<img src="/media/logo.png" width="30%"><br/>Candyland
 </h1>
 
 <h4 align="center">
