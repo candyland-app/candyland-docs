@@ -1,12 +1,12 @@
 <h1 align="center">
-<img src="/media/logo.png" width="30%"><br/>Candyland
+<img src="/media/logo.png" width="30%"><br/>Candyland Docs
 </h1>
 
 <h4 align="center">
   📝 Project-wide documentation & reports
 </h4>
 
-[![Build Status](https://travis-ci.com/klauscfhq/candyland-docs.svg?token=rXPPxPTH1doiuVrFnjqh&branch=master)](https://travis-ci.com/klauscfhq/candyland-docs)
+[![Build Status](https://travis-ci.com/klauscfhq/candyland-docs.svg?token=rXPPxPTH1doiuVrFnjqh&branch=master)](https://travis-ci.com/klauscfhq/candyland-docs) [![Dependency Status](https://dependencyci.com/github/klauscfhq/candyland-docs/badge)](https://dependencyci.com/github/klauscfhq/candyland-docs) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/klauscfhq/candyland-docs) [![Remark md style](https://img.shields.io/badge/md%20style-remark-brightgreen.svg)](https://github.com/klauscfhq/candyland-docs)
 
 ## Related
 
