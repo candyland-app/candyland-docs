@@ -15,7 +15,7 @@ const distPath = resolve(__dirname, 'dist');	// Dist directory
 const stylePath = resolve(__dirname, 'style');	// Style directory
 const cssFile = join(stylePath, 'index.css');	// Main styling file
 const reportsPath = resolve(__dirname, 'reports');	// Reports directory
-const reportTitles = ['requirements-analysis'];	// Project report titles
+const reportTitles = fs.readdirSync(reportsPath);	// Project report titles
 
 const pdfOptions = {
 	// PDF conversion options
@@ -32,11 +32,12 @@ const pdfOptions = {
 const mdDocs = reportTitles.map(report => {
 	// Markdown source docs
 	const mdDoc = join(reportsPath, report);
-	return mdDoc + '.md';
+	return mdDoc;
 });
 
 const pdfDocs = reportTitles.map(report => {
 	// PDF docs to be created
+	report = report.replace('.md', '');
 	const pdfDoc = join(distPath, report);
 	return pdfDoc + '.pdf';
 });
