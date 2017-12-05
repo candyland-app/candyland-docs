@@ -12,8 +12,8 @@ const green = chalk.bold.green;	// Green bold text
 const yellow = chalk.bold.yellow;	// Yellow bold text
 
 const distPath = resolve(__dirname, 'dist');	// Dist directory
-const stylePath = resolve(__dirname, 'style');	// Style directory
-const cssFile = join(stylePath, 'index.css');	// Main styling file
+const stylePath = resolve(__dirname, 'node_modules/kumacss/dist');	// Style directory
+const cssFile = join(stylePath, 'kuma.css');	// Main styling file
 const reportsPath = resolve(__dirname, 'reports');	// Reports directory
 const reportTitles = fs.readdirSync(reportsPath);	// Project report titles
 
@@ -21,7 +21,7 @@ const pdfOptions = {
 	// PDF conversion options
 	cssPath: cssFile,
 	paperFormat: 'A4',
-	paperBorder: '2cm',
+	paperBorder: '1cm',
 	paperOrientation: 'portrait',
 	remarkable: {
 		html: true,
