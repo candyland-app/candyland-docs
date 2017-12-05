@@ -29,7 +29,7 @@
     "test": "npm run test:docs && npm run test:js && npm run test:deps",
     "test:js": "xo",
     "test:docs": "remark .github .",
-    "test:deps": "depcheck --ignores=remark-preset-lint-recommended,remark-validate-links"
+    "test:deps": "depcheck --ignores=kumacss,remark-preset-lint-recommended,remark-validate-links"
   },
   "remarkConfig": {
     "plugins": [
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "depcheck": "^0.6.8",
+    "kumacss": "^0.1.1",
     "xo": "^0.19.0"
   }
 }
