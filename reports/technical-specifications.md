@@ -224,5 +224,5 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 
 #### Wireframes
 <div align="center">
-	<img src="reports/png/admin-wireframes.png" width="40%">
+	<img src="png/admin-wireframes.png" width="40%">
 </div>
