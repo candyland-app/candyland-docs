@@ -17,6 +17,7 @@
     "cross-zip": "^2.1.5",
     "markdown-pdf": "^8.0.0",
     "mkdirp": "^0.5.1",
+    "node-dir": "^0.1.17",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
     "remark-validate-links": "^7.0.0",

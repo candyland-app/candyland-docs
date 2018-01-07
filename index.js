@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+const dir = require('node-dir');
 const rimraf = require('rimraf');
 const markdownPDF = require('markdown-pdf');
 
@@ -15,7 +16,6 @@ const distPath = resolve(__dirname, 'dist');	// Dist directory
 const stylePath = resolve(__dirname, 'node_modules/kumacss/dist');	// Style directory
 const cssFile = join(stylePath, 'kuma.css');	// Main styling file
 const reportsPath = resolve(__dirname, 'reports');	// Reports directory
-const reportTitles = fs.readdirSync(reportsPath);	// Project report titles
 
 const pdfOptions = {
 	// PDF conversion options
@@ -29,17 +29,13 @@ const pdfOptions = {
 	}
 };
 
-const mdDocs = reportTitles.map(report => {
-	// Markdown source docs
-	const mdDoc = join(reportsPath, report);
-	return mdDoc;
-});
+// Get all markdown docs
+const mdDocs = dir.files(reportsPath, {sync: true, recursive: false});
 
-const pdfDocs = reportTitles.map(report => {
+const pdfDocs = mdDocs.map(mdDoc => {
 	// PDF docs to be created
-	report = report.replace('.md', '');
-	const pdfDoc = join(distPath, report);
-	return pdfDoc + '.pdf';
+	const pdfDoc = mdDoc.replace('reports', 'dist').replace('.md', '.pdf');
+	return pdfDoc;
 });
 
 if (fs.existsSync(distPath)) {
