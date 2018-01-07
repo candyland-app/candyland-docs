@@ -231,9 +231,67 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 #### Wireframes
 - Παρακάτω παρουσιάζονται τα βασικότερα wireframes της εφαρμογής όπως αυτά προέκυψαν από την ανάλυση απαιτήσεων λαμβάνοντας υπόψην και την ανάγκη για responsive design της πλατφόρμας.
 
+- Wireframes για τις σελίδες που προβάλονται πριν κάνει ο χρήστης login:
+<br>
+
 <div align="center">
-	<img src="png/admin-wireframes.png" width="40%">
+	<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
+</div>
+
+- Wireframes για τις σελίδες που αφορούν τους admins:
+
+<div align="center">
+	<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
 </div>
 <div align="center">
-	<img src="png/basic-wireframes.png" width="40%">
+	<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
+</div>
+<div align="center">
+	<img src="png/wireframes/admins/ProviderWireframe.png" width="60%">
+</div>
+<br>
+
+- Wireframes για τις σελίδες που αφορούν τους parents:
+
+<div align="center">
+	<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/parents/EditProfileWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/parents/EventInfoWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/parents/EventSearchWireframe.png" width="60%">
+</div>
+<br>
+
+- Wireframes για τις σελίδες που αφορούν τους providers:
+
+<div align="center">
+	<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/providers/HistoryPageWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/providers/MonthlyReportWireframe.png" width="60%">
+</div>
+
+<div align="center">
+	<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
 </div>
