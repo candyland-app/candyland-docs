@@ -221,3 +221,8 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 
 #### Διαχειριστής
 - blah blah...
+
+#### Wireframes
+<div align="center">
+	<img src="reports/png/admin-wireframes.png" width="40%">
+</div>
