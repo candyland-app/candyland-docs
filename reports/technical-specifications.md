@@ -232,6 +232,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 - Παρακάτω παρουσιάζονται τα βασικότερα wireframes της εφαρμογής όπως αυτά προέκυψαν από την ανάλυση απαιτήσεων λαμβάνοντας υπόψην και την ανάγκη για responsive design της πλατφόρμας.
 
 - Wireframes για τις σελίδες που προβάλονται πριν κάνει ο χρήστης login:
+<br>
 
 <div align="center">
 	<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
@@ -242,6 +243,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 - Wireframes για τις σελίδες που αφορούν τους admins:
+<br>
 
 <div align="center">
 	<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
@@ -256,6 +258,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 - Wireframes για τις σελίδες που αφορούν τους parents:
+<br>
 
 <div align="center">
 	<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
@@ -274,6 +277,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 - Wireframes για τις σελίδες που αφορούν τους providers:
+<br>
 
 <div align="center">
 	<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
