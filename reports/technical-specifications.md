@@ -223,6 +223,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 - blah blah...
 
 #### Wireframes
+- Παρακάτω παρουσιάζονται τα βασικότερα wireframes της εφαρμογής όπως αυτά προέκυψαν από την ανάλυση απαιτήσεων λαμβάνοντας υπόψην και την ανάγκη για responsive design της πλατφόρμας.
 
 <div align="center">
 	<img src="png/admin-wireframes.png" width="40%">
