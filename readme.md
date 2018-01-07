@@ -11,6 +11,7 @@
 ## Related
 
 - [App](https://github.com/klauscfhq/candyland-app)
+- [Dependency](https://github.com/klauscfhq/candyland-dependency)
 
 ## Contents
 
