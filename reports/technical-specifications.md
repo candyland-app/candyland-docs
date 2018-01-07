@@ -202,6 +202,12 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 - Backend: MySQL, blah blah blah...
 - Dependencies: Watermark thingy, Junit, ο,τι χρησιμοποιουμε για αναζήτηση κειμένου(;), materialize (;).  blah blah blah...
 
+- To ER διάγραμμα της βάσης μας σε MySQL είναι το εξής:
+
+<div align="center">
+	<img src="png/ER_Model/ER_Model.PNG" width="100%">
+</div>
+
 #### Στα παραπάνω χώνουμε και τα UML(class component whatever)/ER Diagrams thingies
 
 <br>
