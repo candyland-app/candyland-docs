@@ -192,7 +192,7 @@ Flowchart για την διαδικασία αγοράς εισιτηρίου �
 
 <br>
 <div align="center">
-			<img src="png/order-flow-chart.png" width="60%">
+			<img src="png/order-flow-chart.png" width="90%">
 		</div>
 <br>
 
@@ -201,7 +201,7 @@ Flowchart για την διαδικασία προσθήκης πόντων σ�
 
 <br>
 <div align="center">
-			<img src="png/add-points-wallet.png" width="60%">
+			<img src="png/add-points-wallet.png" width="90%">
 		</div>
 <br>
 
@@ -210,7 +210,7 @@ Flowchart για την διαδικασία SignUp του Παρόχου
 
 <br>
 <div align="center">
-			<img src="png/ProviderSignupFlowchart.png" width="60%">
+			<img src="png/ProviderSignupFlowchart.png" width="90%">
 		</div>
 <br>
 
@@ -223,7 +223,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 <br>
 <br>
 
-### Αρχιτεκτονική και Συστατικά (Klaus και μπαξο πλιζ do that shit)
+### Αρχιτεκτονική και Συστατικά 
 
 Όσων αφορά το τεχνικό κομμάτι της Εφαρμογής, καταλήξαμε ότι αυτή θα υλοποιηθεί χρησιμοποιώντας τις εξής τεχνολογίες.
 
@@ -268,14 +268,6 @@ https://github.com/ImageMagick/ImageMagick
 <br>
 <br>
 
-### Use Cases
-
-Ακολουθεί το γενικό Use Case της πλατφόρμας:
-
-<div align="center">
-	<img src="png/ER_Model/ER_Model.PNG" width="100%">
-</div>
-
 ### Λεπτομερής προδιαγραφή Λειτουργιών που υποστηρίζονται από το λογισμικό (χώνουμε και wireframes/umls εδώ)
 
 #### Use Case Diagrams
@@ -283,22 +275,22 @@ https://github.com/ImageMagick/ImageMagick
 Ακολουθεί ενα γενικό Use Case diagram της λειτουργίας της πλατφόρμας:
 
 <div align="center">
-	<img src="png/umls/system-use-case.png" width="60%">
+	<img src="png/system-use-case.png" width="60%">
 </div>
 
 Πιο αναλυτικά για τη Διαχείριση Χρηστών:
 <div align="center">
-	<img src="png/umls/users-management.png" width="60%">
+	<img src="png/users-management.png" width="60%">
 </div>
 
 Πιο αναλυτικά για την Αναζήτηση Δραστηριοτήτων:
 <div align="center">
-	<img src="png/umls/events-search.png" width="60%">
+	<img src="png/events-search.png" width="60%">
 </div>
 
 Πιο αναλυτικά για τη Δημιουργία Λογαριασμού/Sign Up:
 <div align="center">
-	<img src="png/umls/user-sign-up.png" width="60%">
+	<img src="png/user-sign-up.png" width="60%">
 </div>
 
 Το περιεχόμενο των παραπάνω Use Cases γίνεται κατανοητό με την επεξήγηση των παρακάτω UML Diagrams.
