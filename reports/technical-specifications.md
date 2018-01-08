@@ -187,7 +187,6 @@
 
 #### Flowcharts
 
-##### Insert OrderFlowchart image
 Flowchart για την διαδικασία αγοράς εισιτηρίου για κάποια εκδήλωση
 
 <br>
@@ -196,7 +195,6 @@ Flowchart για την διαδικασία αγοράς εισιτηρίου �
 		</div>
 <br>
 
-##### Insert AddPointsWallet image
 Flowchart για την διαδικασία προσθήκης πόντων στο E-Wallet του Γονέα
 
 <br>
@@ -205,7 +203,6 @@ Flowchart για την διαδικασία προσθήκης πόντων σ�
 		</div>
 <br>
 
-##### Insert SignupProvider image
 Flowchart για την διαδικασία SignUp του Παρόχου
 
 <br>
@@ -214,9 +211,14 @@ Flowchart για την διαδικασία SignUp του Παρόχου
 		</div>
 <br>
 
+
 Τώρα ακολουθεί ένα απλό Decision Tree για το σύστημα επιβάβευσης Γονέων για τη χρήση της πλατφόρμας με πόντους.
 
-##### Insert BonusProvider image
+<br>
+<div align="center">
+			<img src="png/bonus-decisiion-tree.png" width="90%">
+		</div>
+<br>
 Decision Tree για το σύστημα επιβράβευσης πόντων
 
 <br>
@@ -280,7 +282,7 @@ https://github.com/ImageMagick/ImageMagick
 
 Πιο αναλυτικά για τη Διαχείριση Χρηστών:
 <div align="center">
-	<img src="png/users-management.png" width="60%">
+	<img src="png/users-management.png" width="35%">
 </div>
 
 Πιο αναλυτικά για την Αναζήτηση Δραστηριοτήτων:
