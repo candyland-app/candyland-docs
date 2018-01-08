@@ -242,7 +242,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 <div align="center">
-	<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
+	<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
 </div>
 
 <div>
