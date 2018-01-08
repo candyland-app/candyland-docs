@@ -162,7 +162,7 @@
 
 - Ο πάροχος εγγράφεται στην πλατφόρμα παρέχοντας τις πληροφορίες του τραπεζικού του λογαριασμού από τον οποίο θα κάθε μήνα θα πληρώνεται η πλατφόρμα το ποσό των 50€. Το ποσό αυτό θα αποτελεί το μοναδικό κέρδος της επιχείρισης και ενδέχεται να αλλάξει ανάλογα με τις ανάγκες λειτουργίας της και το οικονομικό της περιβάλλον.
 - Ο Γονέας εγγράφεται στην πλατφόρμα παρέχοντας επίσης τις πληροφορίες της πιστωτικής/χρεωστικής του κάρτα από την οποίο θα μπορεί να προσθέτει πόντους στο ηλεκτρονικό του πορτοφόλι (E-Wallet)
-- Κάθε γονέας μπορεί οποτεδήποτε να προσθέσει πόντους στο E-Wallet του. Η αναλογία πόντων/ευρώ είναι 1:1, δηλαδή 1 πόντος = 1 ευρώ. 
+- Κάθε γονέας μπορεί οποτεδήποτε να προσθέσει πόντους στο E-Wallet του. Η αναλογία πόντων/ευρώ είναι 1:1, δηλαδή 1 πόντος = 1 ευρώ.
 - Δεν υποστηρίζεται μετατροπή από πόντους σε ευρώ.
 - Το σύστημα υποστηρίζει σύστημα επιβράβευσης πόντων, κατά το οποίο κάθε φορά που 4 αγορές εισιτηρίων ολοκληρώνονται από τον Γονέα, προσθέτονται 10 επιπλέον πόντοι στο λογαριασμό του.
 
@@ -225,7 +225,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 <br>
 <br>
 
-### Αρχιτεκτονική και Συστατικά 
+### Αρχιτεκτονική και Συστατικά
 
 Όσων αφορά το τεχνικό κομμάτι της Εφαρμογής, καταλήξαμε ότι αυτή θα υλοποιηθεί χρησιμοποιώντας τις εξής τεχνολογίες.
 
@@ -233,14 +233,14 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 - Design Language: Material Design
 - Frontend: Για το UI της εφαρμογής χρησιμοποιούμε Angular2 JS. Η γλώσσα αυτή μας επιτρέπει τη χρήση του Material Design Framework, το οποίο προσφέρει τα σημαντικά πλεονέκτημα ενός του καθαρού, responsive, cross-device, immersive design.
 - Database: Η βάση δεδομένων μας θα βασίζεται στη MySQL
-- Backend: Για το backend χρησιμοποιούμε Java και το Spring Framework. Με το Spring Boot έχουμε τη δυνατότητα να σχεδιάσουμε RESTful API και σημαντικά πιο καθαρό κώδικα, ιδίως όσον αφορά τα web services, ενώ η Java έχει τα πλεονεκτήματα του Object Oriented Programming. 
+- Backend: Για το backend χρησιμοποιούμε Java και το Spring Framework. Με το Spring Boot έχουμε τη δυνατότητα να σχεδιάσουμε RESTful API και σημαντικά πιο καθαρό κώδικα, ιδίως όσον αφορά τα web services, ενώ η Java έχει τα πλεονεκτήματα του Object Oriented Programming.
 - Project Management: Χρησιμοποιούμε το Apache Maven για τη διαχείριση του project και των dependencies του backend, ενώ για του frontend χρησιμοποιούμε το npm (NodeJS Package Manager).
-- Dependencies: Στα dependencies του project μας συμπεριλαμβάνονται προς το παρόν στο pom.xml του Maven : 
-Το Junit Framework (για το testing του Java κώδικα στο backend), 
-Το Hibernate (για διαχείριση της βάσης), 
+- Dependencies: Στα dependencies του project μας συμπεριλαμβάνονται προς το παρόν στο pom.xml του Maven :
+Το Junit Framework (για το testing του Java κώδικα στο backend),
+Το Hibernate (για διαχείριση της βάσης),
 Το Spring Boot (και αρκετά artifacts του Spring που έχουν χρειαστεί μέχρι στιγμής)
 Το lettuce, που χρειάζεται για session management (lettuce.io)
-Το javax.mail package, ώστε να μπορούμε να κάνουμε 2 step verification με κωδικό που αποστέλλεται μέσω email. 
+Το javax.mail package, ώστε να μπορούμε να κάνουμε 2 step verification με κωδικό που αποστέλλεται μέσω email.
 
 Το βασικό dependency του project, δηλαδή το εργαλείο που προσθέτει watermark στις εικόνες, υπάρχει ως standalone project στο candyland-dependency repository, με οδηγίες για το πώς μπορεί να χρησιμοποιηθεί.
 
@@ -264,9 +264,9 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 <br>
 <br>
 
-### Υδατογράφημα (watermark)
-https://github.com/ImageMagick/ImageMagick
-Το watermark που χρησιμοποιείται για τις εικόνες που ανεβαίνουν στην πλατφόρμα, είναι ένα ξεχωριστό binary dependency. Το npm package που χρησιμοποιούμε είναι το imagemagick. Ένα live demo της λειτουργίας του watermark μας βρίσκεται διαθέσιμο στο [watermark](https://candyland-dep.herokuapp.com)
+### Project Dependency - Image Watermark
+
+Το `image watermarking` dependency που χρησιμοποιείται στις εικόνες οι oποίες ανεβαίνουν στην πλατφόρμα, αποτελεί ένα ξεχωριστό προγραμματιστικό ΑPI το οποίο δημιουργήσαμε αποκλειστικά για την web εφαρμογή μας. O κώδικας του καθώς και το αντίστοιχο documentation είναι διαθέσιμα στο [`candyland-dependency`](https://github.com/klauscfhq/candyland-dependency) repository. Επίσης, υπάρχει διαθέσιμο online live demo της λειτουργίας [εδώ](https://candyland-dep.herokuapp.com/).
 <br>
 <br>
 
@@ -343,7 +343,7 @@ https://github.com/ImageMagick/ImageMagick
 </div>
 
 #### Διαχειριστής
-- Μπορεί να κάνει τις ίδιες ενέργειες με τον ανώνυμο χρήστη. 
+- Μπορεί να κάνει τις ίδιες ενέργειες με τον ανώνυμο χρήστη.
 
 - Μπορεί να διαχειριστεί (τροποποιήσει πληροφορίες, κλειδώσει) λογαριασμούς γονέων από τη Σελίδα Διαχείρησης Γονέα.
 
@@ -370,7 +370,7 @@ https://github.com/ImageMagick/ImageMagick
 	- Η αρχική σελίδα των admins:
 		<div align="center">
 			<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
-		</div>	
+		</div>
 - H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς γονέων:
 		<div align="center">
 			<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
@@ -403,7 +403,7 @@ https://github.com/ImageMagick/ImageMagick
 		<div align="center">
 			<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
 		</div>
-	- Η σελίδα από την οποία ο πάροχος θα μπορεί να αλλάξει πληροφορίες του προφίλ του: 
+	- Η σελίδα από την οποία ο πάροχος θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
 		<div align="center">
 			<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
 		</div>
@@ -419,5 +419,3 @@ https://github.com/ImageMagick/ImageMagick
 		<div align="center">
 			<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
 		</div>
-
-
