@@ -216,7 +216,7 @@ Flowchart για την διαδικασία SignUp του Παρόχου
 
 <br>
 <div align="center">
-			<img src="png/bonus-decision-tree.png" width="60%">
+			<img src="png/bonus-decision-tree.png" width="40%">
 		</div>
 <br>
 Decision Tree για το σύστημα επιβράβευσης πόντων
