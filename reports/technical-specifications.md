@@ -285,59 +285,55 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 		</div>
 
 - Wireframes για τις σελίδες που αφορούν τους admins:
-	-Η αρχική σελίδα 
-	<div align="center">
-		<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
-	</div>
+	- Η αρχική σελίδα των admins:
+		<div align="center">
+			<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
+		</div>	
+- H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς γονέων:
+		<div align="center">
+			<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
+		</div>
+	- H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς παρόχων:
+		<div align="center">
+			<img src="png/wireframes/admins/ProviderWireframe.png" width="60%">
+		</div>
 
-<div align="center">
-	<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/admins/ProviderWireframe.png" width="60%">
-</div>
-
-<div>
 - Wireframes για τις σελίδες που αφορούν τους parents:
-</div>
+	- Η σελίδα του ηλεκτρονικού πορτοφολιού του γονέα:
+		<div align="center">
+			<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
+		</div>
+	- Η σελίδα από την οποία ο γονέας θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
+		<div align="center">
+			<img src="png/wireframes/parents/EditProfileWireframe.png" width="60%">
+		</div>
+	- Η σελίδα με τις πληροφορίες ενός event:
+		<div align="center">
+			<img src="png/wireframes/parents/EventInfoWireframe.png" width="60%">
+		</div>
+	- Η σελίδα με τα αποτελέσματα αναζήτησης των events:
+		<div align="center">
+			<img src="png/wireframes/parents/EventSearchWireframe.png" width="60%">
+		</div>
 
-<div align="center">
-	<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/parents/EditProfileWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/parents/EventInfoWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/parents/EventSearchWireframe.png" width="60%">
-</div>
-
-<div>
 - Wireframes για τις σελίδες που αφορούν τους providers:
-</div>
-
-<div align="center">
-	<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/providers/HistoryPageWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/providers/MonthlyReportWireframe.png" width="60%">
-</div>
-
-<div align="center">
-	<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
-</div>
+	- Η σελίδα δημιουργίας ενός νέου event:
+		<div align="center">
+			<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
+		</div>
+	- Η σελίδα από την οποία ο πάροχος θα μπορεί να αλλάξει πληροφορίες του προφίλ του: 
+		<div align="center">
+			<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
+		</div>
+	- Η σελίδα με το ιστορικό των events του παρόχου:
+		<div align="center">
+			<img src="png/wireframes/providers/HistoryPageWireframe.png" width="60%">
+		</div>
+	- Η σελίδα με το report των μηνιαίων στατιστικών του παρόχου:
+		<div align="center">
+			<img src="png/wireframes/providers/MonthlyReportWireframe.png" width="60%">
+		</div>
+	- Η λίστα με τα events του παρόχου:
+		<div align="center">
+			<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
+		</div>
