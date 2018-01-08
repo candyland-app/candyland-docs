@@ -283,7 +283,10 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 		<div align="center">
 			<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
 		</div>
-
+	- Το sign-in page των admins:
+		<div align="center">
+			<img src="png/wireframes/basic/Admin SignIn.png" width="60%">
+		</div>
 - Wireframes για τις σελίδες που αφορούν τους admins:
 	- Η αρχική σελίδα των admins:
 		<div align="center">
