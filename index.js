@@ -1,10 +1,10 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const mdpdf = require('mdpdf');
 const chalk = require('chalk');
 const dir = require('node-dir');
 const rimraf = require('rimraf');
-const markdownPDF = require('markdown-pdf');
 
 const join = path.join;
 const resolve = path.resolve;
@@ -17,26 +17,36 @@ const stylePath = resolve(__dirname, 'node_modules/kumacss/dist');	// Style dire
 const cssFile = join(stylePath, 'kuma.css');	// Main styling file
 const reportsPath = resolve(__dirname, 'reports');	// Reports directory
 
-const pdfOptions = {
-	// PDF conversion options
-	cssPath: cssFile,
-	paperFormat: 'A4',
-	paperBorder: '1cm',
-	paperOrientation: 'portrait',
-	remarkable: {
-		html: true,
-		breaks: true
-	}
-};
-
 // Get all markdown docs
 const mdDocs = dir.files(reportsPath, {sync: true, recursive: false});
 
-const pdfDocs = mdDocs.map(mdDoc => {
-	// PDF docs to be created
-	const pdfDoc = mdDoc.replace('reports', 'dist').replace('.md', '.pdf');
+function getPdfPath(mdDocPath) {
+	// Get the path of the PDF file to be created
+	const pdfDoc = mdDocPath.replace('reports', 'dist').replace('.md', '.pdf');
 	return pdfDoc;
-});
+}
+
+function buildPDF(mdDocPath) {
+	// Build PDF from input markdown file
+	const pdfDocPath = getPdfPath(mdDocPath);
+	// Building options
+	const options = {
+		source: mdDocPath,
+		destination: pdfDocPath,
+		styles: cssFile,
+		pdf: {
+			format: 'A4'
+		}
+	};
+	// Initialize building process
+	mdpdf.convert(options).then(pdfPath => {
+		console.log();
+		console.log(green('✔ Created PDF file: ') + yellow(pdfPath));
+	}).catch(err => {
+		console.error(err);
+	});
+	return 0;
+}
 
 if (fs.existsSync(distPath)) {
 	// Check if `dist` directory already exist
@@ -49,10 +59,7 @@ if (fs.existsSync(distPath)) {
 	}
 }
 
-markdownPDF(pdfOptions).from(mdDocs).to(pdfDocs, () => {
-	// Convert markdown files to PDF
-	console.log(green('✔ Created PDF files'));
-	pdfDocs.forEach(pdfDoc => {
-		console.log(yellow('  + ' + pdfDoc));
-	});
-});
+for (let i = 0; i < mdDocs.length; i++) {
+	// Run the building for all markdown files
+	buildPDF(mdDocs[i]);
+}

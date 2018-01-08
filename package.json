@@ -15,7 +15,7 @@
   "dependencies": {
     "chalk": "^2.0.1",
     "cross-zip": "^2.1.5",
-    "markdown-pdf": "^8.0.0",
+    "mdpdf": "^1.5.1",
     "mkdirp": "^0.5.1",
     "node-dir": "^0.1.17",
     "remark-cli": "^4.0.0",
