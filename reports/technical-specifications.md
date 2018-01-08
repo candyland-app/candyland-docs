@@ -5,7 +5,7 @@
 <br>
 
 ## Αναφορά Ανάλυσης Απαιτήσεων
-mia vlakeia kapou
+
 <br>
 <br>
 <br>
@@ -244,10 +244,10 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 		</div>
 
 - Wireframes για τις σελίδες που αφορούν τους admins:
-
-<div align="center">
-	<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
-</div>
+	-Η αρχική σελίδα 
+	<div align="center">
+		<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
+	</div>
 
 <div align="center">
 	<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
