@@ -235,17 +235,15 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 
 - Wireframes για τις σελίδες που προβάλονται πριν κάνει ο χρήστης login:
 	- Η αρχική σελίδα της εφαρμογής:
-	<div align="center">
-		<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
-	</div>
+		<div align="center">
+			<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
+		</div>
 	- Το sign-up page των γονέων:
-	<div align="center">
-		<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
-	</div>
+		<div align="center">
+			<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
+		</div>
 
-<div>
 - Wireframes για τις σελίδες που αφορούν τους admins:
-</div>
 
 <div align="center">
 	<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
