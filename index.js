@@ -7,7 +7,6 @@ const dir = require('node-dir');
 const rimraf = require('rimraf');
 const kumaPath = require('kumacss');
 
-const join = path.join;
 const resolve = path.resolve;
 
 const green = chalk.bold.green;	// Green bold text
