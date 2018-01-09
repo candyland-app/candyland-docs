@@ -5,6 +5,7 @@ const mdpdf = require('mdpdf');
 const chalk = require('chalk');
 const dir = require('node-dir');
 const rimraf = require('rimraf');
+const kumaPath = require('kumacss');
 
 const join = path.join;
 const resolve = path.resolve;
@@ -12,9 +13,8 @@ const resolve = path.resolve;
 const green = chalk.bold.green;	// Green bold text
 const yellow = chalk.bold.yellow;	// Yellow bold text
 
+const cssFile = kumaPath();	// Main styling file
 const distPath = resolve(__dirname, 'dist');	// Dist directory
-const stylePath = resolve(__dirname, 'node_modules/kumacss/dist');	// Style directory
-const cssFile = join(stylePath, 'kuma.css');	// Main styling file
 const reportsPath = resolve(__dirname, 'reports');	// Reports directory
 
 // Get all markdown docs
