@@ -248,7 +248,7 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 Ακολουθεί το ER Diagram της βάσης δεδομένων μας:
 
 <div align="center">
-	<img src="png/ER_Model/ER_Model.PNG" width="100%">
+	<img src="png/ER_Model/ER_Model.png" width="100%">
 </div>
 
 #### Στα παραπάνω χώνουμε και τα UML(class component whatever)/ER Diagrams thingies
