@@ -8,9 +8,6 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
 
 ### Η ομάδα
 
@@ -21,8 +18,6 @@
 - Σινάνι Κλαούντιο (@klauscfhq) AM: 3113623
 - Στυλιανίδης Χρήστος (@Jezulas) AM: 3113130
 
-<br>
-<br>
 
 ### Σκοπός του Συστήματος
 
@@ -146,15 +141,8 @@
 - Το κέρδος προκύπτει με χρέωση μηνιαίου ποσού στους Παρόχους Υπηρεσιών, μέσω συνδρομής. Επιπλέον, προκειμένου να επιτευχθεί μεγαλύτερη κίνηση στην πλατφόρμα, θα υπάρχει bonus επιβράβευσης σε πόντους προς τους γονείς κάθε φορά που ολοκληρώνουν συγκεκριμένο αριθμό συναλλαγών.
 
 <br>
-<br>
 
 ## Αναφορά Τεχνικών Προδιαγραφών
-
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ### Επιχειρησιακός Στόχος
 
@@ -166,7 +154,6 @@
 - Δεν υποστηρίζεται μετατροπή από πόντους σε ευρώ.
 - Το σύστημα υποστηρίζει σύστημα επιβράβευσης πόντων, κατά το οποίο κάθε φορά που 4 αγορές εισιτηρίων ολοκληρώνονται από τον Γονέα, προσθέτονται 10 επιπλέον πόντοι στο λογαριασμό του.
 
-<br>
 <br>
 
 ### Μοντελοποίηση και Σχεδιασμός
@@ -222,25 +209,22 @@ Flowchart για την διαδικασία SignUp του Παρόχου
 Decision Tree για το σύστημα επιβράβευσης πόντων
 
 <br>
-<br>
-<br>
 
 ### Αρχιτεκτονική και Συστατικά
 
 Όσων αφορά το τεχνικό κομμάτι της Εφαρμογής, καταλήξαμε ότι αυτή θα υλοποιηθεί χρησιμοποιώντας τις εξής τεχνολογίες.
-
 
 - Design Language: Material Design
 - Frontend: Για το UI της εφαρμογής χρησιμοποιούμε Angular2 JS. Η γλώσσα αυτή μας επιτρέπει τη χρήση του Material Design Framework, το οποίο προσφέρει τα σημαντικά πλεονέκτημα ενός του καθαρού, responsive, cross-device, immersive design.
 - Database: Η βάση δεδομένων μας θα βασίζεται στη MySQL
 - Backend: Για το backend χρησιμοποιούμε Java και το Spring Framework. Με το Spring Boot έχουμε τη δυνατότητα να σχεδιάσουμε RESTful API και σημαντικά πιο καθαρό κώδικα, ιδίως όσον αφορά τα web services, ενώ η Java έχει τα πλεονεκτήματα του Object Oriented Programming.
 - Project Management: Χρησιμοποιούμε το Apache Maven για τη διαχείριση του project και των dependencies του backend, ενώ για του frontend χρησιμοποιούμε το npm (NodeJS Package Manager).
-- Dependencies: Στα dependencies του project μας συμπεριλαμβάνονται προς το παρόν στο pom.xml του Maven :
-Το Junit Framework (για το testing του Java κώδικα στο backend),
-Το Hibernate (για διαχείριση της βάσης),
-Το Spring Boot (και αρκετά artifacts του Spring που έχουν χρειαστεί μέχρι στιγμής)
-Το lettuce, που χρειάζεται για session management (lettuce.io)
-Το javax.mail package, ώστε να μπορούμε να κάνουμε 2 step verification με κωδικό που αποστέλλεται μέσω email.
+- Dependencies: Στα dependencies του project μας συμπεριλαμβάνονται προς το παρόν στο pom.xml του Maven:
+	- Το Junit Framework (για το testing του Java κώδικα στο backend)
+	- Το Hibernate (για διαχείριση της βάσης)
+	- Το Spring Boot (και αρκετά artifacts του Spring που έχουν χρειαστεί μέχρι στιγμής)
+	- Το Lettuce, που χρειάζεται για session management (lettuce.io)
+	- Το Javax Mail package, ώστε να μπορούμε να κάνουμε 2 step verification με κωδικό που αποστέλλεται μέσω email.
 
 Το βασικό dependency του project, δηλαδή το εργαλείο που προσθέτει watermark στις εικόνες, υπάρχει ως standalone project στο candyland-dependency repository, με οδηγίες για το πώς μπορεί να χρησιμοποιηθεί.
 
@@ -251,26 +235,17 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 	<img src="png/ER_Model/ER_Model.png" width="100%">
 </div>
 
-#### Στα παραπάνω χώνουμε και τα UML(class component whatever)/ER Diagrams thingies
-
-<br>
-<br>
-
 ### Google Maps
-
 
 Θα χρησιμοποίησουμε το Google Maps API για την εμφάνηση χαρτών στην εφαρμογή μας. Στον χάρτη αυτό θα μπορούμε να τοποθετήσουμε pins για τις εκδηλώσεις που βρίσκονται σε κάποια ακτίνα γύρω από τον γονέα ή την περιοχή που έχει επιλέξει.
 
-<br>
-<br>
-
 ### Project Dependency - Image Watermark
 
-Το `image watermarking` dependency που χρησιμοποιείται στις εικόνες οι oποίες ανεβαίνουν στην πλατφόρμα, αποτελεί ένα ξεχωριστό προγραμματιστικό ΑPI το οποίο δημιουργήσαμε αποκλειστικά για την web εφαρμογή μας. O κώδικας του καθώς και το αντίστοιχο documentation είναι διαθέσιμα στο [`candyland-dependency`](https://github.com/klauscfhq/candyland-dependency) repository. Επίσης, υπάρχει διαθέσιμο online live demo της λειτουργίας [εδώ](https://candyland-dep.herokuapp.com/).
+Το image watermarking dependency που χρησιμοποιείται στις εικόνες οι oποίες ανεβαίνουν στην πλατφόρμα, αποτελεί ένα ξεχωριστό προγραμματιστικό ΑPI το οποίο δημιουργήσαμε αποκλειστικά για την web εφαρμογή μας. O κώδικας του καθώς και το αντίστοιχο documentation είναι διαθέσιμα στο [candyland-dependency](https://github.com/klauscfhq/candyland-dependency) repository. Επίσης, υπάρχει διαθέσιμο online live demo της λειτουργίας [εδώ](https://candyland-dep.herokuapp.com/).
 <br>
 <br>
 
-### Λεπτομερής προδιαγραφή Λειτουργιών που υποστηρίζονται από το λογισμικό (χώνουμε και wireframes/umls εδώ)
+### Προδιαγραφή Λειτουργιών
 
 #### Use Case Diagrams
 
@@ -281,16 +256,19 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 Πιο αναλυτικά για τη Διαχείριση Χρηστών:
+
 <div align="center">
 	<img src="png/users-management.png" width="35%">
 </div>
 
 Πιο αναλυτικά για την Αναζήτηση Δραστηριοτήτων:
+
 <div align="center">
 	<img src="png/events-search.png" width="60%">
 </div>
 
 Πιο αναλυτικά για τη Δημιουργία Λογαριασμού/Sign Up:
+
 <div align="center">
 	<img src="png/user-sign-up.png" width="60%">
 </div>
@@ -302,12 +280,10 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 Οι λειτουργίες και η διαδικασία πλοήγησης των χρηστών μέσα στην πλατφόρμα συνοψίζονται παρακάτω με τη μορφή διαγραμμάτων. Στα UML diagrams τα κυρτά παραλληλόγραμμα δηλώνουν σύνδεση με άλλο UML diagram στο οποίο αναλύεται η διαδικασία πλοήγησης των σελίδων που αφορούν την συγκεκριμένη ομάδα. Τα σχήματα με πράσινο φόντο συνεπάγονται την ύπαρξη wireframe για την συγκεκριμένη σελίδα ενώ αυτά με κόκκινο φόντο δεν συνοδεύονται από wireframe (δεν κρίθηκε απαραίτητη η δημιουργία κάποιου wireframe).
 
 #### Ανώνυμος Χρήστης
+
 - Μπορεί να δει τη λίστα FAQ, να επικοινωνήσει με τους admin μέσω της σελίδας Επικοινωνία και να μάθει για τους δημιουργούς της πλατφόρμας από τη σελίδα Ποιοι είμαστε.
-
 - Μπορεί να δει και να ψάξει για εκδηλώσεις, με χρήση φίλτρων, αναζήτηση ελεύθερου κειμένου κτλ.
-
 - Μπορεί να μεταφερθεί στη σελίδα sign-up ώστε να δημιουργήσει λογαριασμό.
-
 - Σε περίπτωση που ο χρήστης έχει λογαριασμό, μπορεί να κάνει sign-in για να μεταβεί στην κατάλληλη σελίδα.
 
 <div align="center">
@@ -315,12 +291,10 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 #### Γονέας
+
 - Μπορεί να κάνει τις ίδιες ενέργειες με τον ανώνυμο χρήστη.
-
 - Επιπλέον μπορεί να τροποποιήσει τις πληροφορίες του προφίλ του από την σελίδα Ρυθμίσεις Προφίλ.
-
 - Μπορεί να επιλέξει κάποια δραστηριότητα από τη λίστα δραστηριοτήτων, να μεταβεί στη σελίδα της δραστηριότητας και να κλείσει ηλεκτρονικά εισιτήρια για αυτήν.
-
 - Μπορεί να δει πληροφορίες για το ηλεκτρονικό πορτοφόλι του και να προσθέσει πόντους από τη σελίδα E-Wallet.
 
 <div align="center">
@@ -328,14 +302,11 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 #### Πάροχος
+
 - Μπορεί να κάνει τις ίδιες ενέργειες με τον ανώνυμο χρήστη.
-
 - Επιπλέον μπορεί να τροποποιήσει τις πληροφορίες του προφίλ του από τη σελίδα Ρυθμίσεις Προφίλ.
-
 - Μπορεί να δημιουργήσει νέες εκδηλώσεις ορίζοντας όλες τις απαραίτητες πληροφορίες από τη σελίδα Δημιουργία Εκδήλωσης.
-
 - Μπορεί να έχει πρόσβαση στο ιστορικό των events του από τη σελίδα History.
-
 - Μπορεί να έχει πρόσβαση σε στατιστικά περασμένων events από τη σελίδα Μηνιαία Reports.
 
 <div align="center">
@@ -343,79 +314,124 @@ Decision Tree για το σύστημα επιβράβευσης πόντων
 </div>
 
 #### Διαχειριστής
+
 - Μπορεί να κάνει τις ίδιες ενέργειες με τον ανώνυμο χρήστη.
-
 - Μπορεί να διαχειριστεί (τροποποιήσει πληροφορίες, κλειδώσει) λογαριασμούς γονέων από τη Σελίδα Διαχείρησης Γονέα.
-
 - Μπορεί να διαχειριστεί (τροποποιήσει πληροφορίες, κλειδώσει) λογαριασμούς παρόχων από τη Σελίδα Διαχείρησης Παρόχου.
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 #### Wireframes
-- Παρακάτω παρουσιάζονται τα βασικότερα wireframes της εφαρμογής όπως αυτά προέκυψαν από την ανάλυση απαιτήσεων και τα παραπάνω διαγράμματα πλοήγησης UML.
+
+Παρακάτω παρουσιάζονται τα βασικότερα wireframes της εφαρμογής όπως αυτά προέκυψαν από την ανάλυση απαιτήσεων και τα παραπάνω διαγράμματα πλοήγησης UML.
 
 - Wireframes για τις σελίδες που προβάλονται πριν κάνει ο χρήστης login:
-	- Η αρχική σελίδα της εφαρμογής:
-		<div align="center">
-			<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
-		</div>
-	- Το sign-up page των γονέων:
-		<div align="center">
-			<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
-		</div>
-	- Το sign-in page των admins:
-		<div align="center">
-			<img src="png/wireframes/basic/Admin SignIn.png" width="60%">
-		</div>
+
+  - Η αρχική σελίδα της εφαρμογής:
+
+<div align="center">
+	<img src="png/wireframes/basic/HomepageWireframe.png" width="60%">
+</div>
+
+  - Το sign-up page των γονέων:
+
+<div align="center">
+	<img src="png/wireframes/basic/SignupWireframe.png" width="60%">
+</div>
+
+  - Το sign-in page των admins:
+
+<div align="center">
+	<img src="png/wireframes/basic/Admin SignIn.png" width="60%">
+</div>
 
 - Wireframes για τις σελίδες που αφορούν τους admins:
-	- Η αρχική σελίδα των admins:
-		<div align="center">
-			<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
-		</div>
+
+  - Η αρχική σελίδα των admins:
+
+<div align="center">
+	<img src="png/wireframes/admins/ManagementWireframe.png" width="60%">
+</div>
+
 - H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς γονέων:
-		<div align="center">
-			<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
-		</div>
-	- H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς παρόχων:
-		<div align="center">
-			<img src="png/wireframes/admins/ProviderWireframe.png" width="60%">
-		</div>
+
+<div align="center">
+	<img src="png/wireframes/admins/ParentEditWireframe.png" width="60%">
+</div>
+
+  - H σελίδα από την οποία οι admins μπορούν να τροποποιήσουν λογαριασμούς παρόχων:
+
+<div align="center">
+	<img src="png/wireframes/admins/ProviderWireframe.png" width="60%">
+</div>
 
 - Wireframes για τις σελίδες που αφορούν τους parents:
-	- Η σελίδα του ηλεκτρονικού πορτοφολιού του γονέα:
-		<div align="center">
-			<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
-		</div>
-	- Η σελίδα από την οποία ο γονέας θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
-		<div align="center">
-			<img src="png/wireframes/parents/EditProfileWireframe.png" width="60%">
-		</div>
-	- Η σελίδα με τις πληροφορίες ενός event:
-		<div align="center">
-			<img src="png/wireframes/parents/EventInfoWireframe.png" width="60%">
-		</div>
-	- Η σελίδα με τα αποτελέσματα αναζήτησης των events:
-		<div align="center">
-			<img src="png/wireframes/parents/EventSearchWireframe.png" width="60%">
-		</div>
+
+  - Η σελίδα του ηλεκτρονικού πορτοφολιού του γονέα:
+
+<div align="center">
+	<img src="png/wireframes/parents/EWalletWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα από την οποία ο γονέας θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
+
+<div align="center">
+	<img src="png/wireframes/parents/EditProfileWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα με τις πληροφορίες ενός event:
+
+<div align="center">
+	<img src="png/wireframes/parents/EventInfoWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα με τα αποτελέσματα αναζήτησης των events:
+
+<div align="center">
+	<img src="png/wireframes/parents/EventSearchWireframe.png" width="60%">
+</div>
 
 - Wireframes για τις σελίδες που αφορούν τους providers:
-	- Η σελίδα δημιουργίας ενός νέου event:
-		<div align="center">
-			<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
-		</div>
-	- Η σελίδα από την οποία ο πάροχος θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
-		<div align="center">
-			<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
-		</div>
-	- Η σελίδα με το ιστορικό των events του παρόχου:
-		<div align="center">
-			<img src="png/wireframes/providers/HistoryPageWireframe.png" width="60%">
-		</div>
-	- Η σελίδα με το report των μηνιαίων στατιστικών του παρόχου:
-		<div align="center">
-			<img src="png/wireframes/providers/MonthlyReportWireframe.png" width="60%">
-		</div>
-	- Η λίστα με τα events του παρόχου:
-		<div align="center">
-			<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
-		</div>
+
+  - Η σελίδα δημιουργίας ενός νέου event:
+
+<div align="center">
+	<img src="png/wireframes/providers/CreateEventWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα από την οποία ο πάροχος θα μπορεί να αλλάξει πληροφορίες του προφίλ του:
+
+<div align="center">
+	<img src="png/wireframes/providers/EditProfileWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα με το ιστορικό των events του παρόχου:
+
+<div align="center">
+	<img src="png/wireframes/providers/HistoryPageWireframe.png" width="60%">
+</div>
+
+  - Η σελίδα με το report των μηνιαίων στατιστικών του παρόχου:
+
+<div align="center">
+	<img src="png/wireframes/providers/MonthlyReportWireframe.png" width="60%">
+</div>
+
+  - Η λίστα με τα events του παρόχου:
+
+<div align="center">
+	<img src="png/wireframes/providers/MyEventsWireframe.png" width="60%">
+</div>
