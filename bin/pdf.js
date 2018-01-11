@@ -45,7 +45,6 @@ function buildPDF(mdDocPath) {
 	}
 	// Initialize building process
 	mdpdf.convert(options).then(pdfPath => {
-		console.log();
 		console.log(green('✔ Created PDF file: ') + yellow(pdfPath));
 	}).catch(err => {
 		console.error(err);
