@@ -1,12 +1,12 @@
 <div align="center">
-	<img src="media/logo.png" width="40%">
+	<img src="../media/logo.png" width="40%">
 </div>
 
 <br>
 
 ## Αναφορά Ανάλυσης Απαιτήσεων
 
-<br>
+
 <br>
 <br>
 <br>

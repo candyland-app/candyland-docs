@@ -30,6 +30,7 @@ The Candyland webapp is the semester-long team project for the 2017 Software Eng
 ## Building
 
 - Install the dependencies `npm install`
+- Start the PDF-building server `npm start`
 - Once done editing check for errors `npm test`
 - Build the reports `npm run dist`
 - Package the artifacts `npm run pack`
